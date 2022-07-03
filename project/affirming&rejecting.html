@@ -1,0 +1,65 @@
+<!-- Affirming & Rejecting -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Magsalita | Home</title>
+    <script>
+    // Play a sound when a user clicks the button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home.html"><b>Magsalita (Speak Up!)</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greeting.html">Greetings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requesting.html">Make a Request</a>
+          <li class="nav-item">
+            <a class="nav-link" href="affirming&rejecting.html">Affirm or Reject</a>
+          </li>
+        </ul>
+        <img src="image/magsalita.png" alt="magsalita.png" width="60">
+      </div>
+    </nav>
+
+    <h1 style= "margin-left: 200pt;">Affirming or Rejecting</h1>
+    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;"><em>Click the button to speak up!</em></h4>
+    <hr class="solid">
+    <p class="indent" style="padding-bottom: 30px">
+      <div class="indent">
+        <div class="column">
+          <button onclick="play_sound('sound/oo.m4a')" type="button" class="btn btn-success"><img src="image/Oo.png" alt="oo.png" width="90"><h5><font size="+3">Oo</font><br><font size="+0">(Yes)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/sige.m4a')" type="button" class="btn btn-success"><img src="image/Sige.png" alt="sige.png" width="90"><h5><font size="+3">Sige</font><br><font size="+0">(Agree)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/pwede.m4a')" type="button" class="btn btn-success"><img src="image/pwede.png" alt="pwede.png" width="90"><h5><font size="+3">Pwede</font><br><font size="+0">(Allowed)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/meron.m4a')" type="button" class="btn btn-success"><img src="image/meron.png" alt="meron.png" width="90"><h5><font size="+3">Meron</font><br><font size="+0">(There is)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/tama.m4a')" type="button" class="btn btn-success"><img src="image/tama.png" alt="tama.png" width="90"><h5><font size="+3">Tama</font><br><font size="+0">(Correct)</font></h5></button><br><br>
+        </div>
+        <div class="column">
+          <button onclick="play_sound('sound/hindi.m4a')" type="button" class="btn btn-danger"><img src="image/hindi.png" alt="hindi.png" width="90"><h5><font size="+3">Hindi</font><br><font size="+0">(No)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/ayoko.m4a')" type="button" class="btn btn-danger"><img src="image/ayoko.png" alt="ayoko.png" width="90"><h5><font size="+3">Ayoko</font><br><font size="+0">(Disagree)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/bawal.m4a')" type="button" class="btn btn-danger"><img src="image/bawal.png" alt="bawal.png" width="90"><h5><font size="+3">Bawal</font><br><font size="+0">(Forbidden)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/wala.m4a')" type="button" class="btn btn-danger"><img src="image/wala.png" alt="wala.png" width="90"><h5><font size="+3">Wala</font><br><font size="+0">(None)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/mali.m4a')" type="button" class="btn btn-danger"><img src="image/mali.png" alt="mali.png" width="90"><h5><font size="+3">Mali</font><br><font size="+0">(Wrong)</font></h5></button><br><br>
+        </div>
+      </div>
+
+    </p>
+  </body>
+</html>
