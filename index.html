@@ -1,0 +1,63 @@
+<!-- Main page -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Magsalita | Home</title>
+    <script>
+    // Play a sound when a user clicks the button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Magsalita (Speak Up!)</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="greeting.html">Greetings</a>
+          <a class="navbar-brand" href="requesting.html">Make a Request</a>
+          <a class="navbar-brand" href="affirming&rejecting.html">Affirm or Reject</a>
+
+          <img src="image/magsalita.png" alt="magsalita.png" width="60">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greeting.html">Greetings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requesting.html">Make a Request</a>
+          <li class="nav-item">
+            <a class="nav-link" href="affirming&rejecting.html">Affirm or Reject</a>
+          </li>
+        </ul>
+        <img src="image/magsalita.png" alt="magsalita.png" width="60">
+      </div>
+    </nav>
+
+    <h1 style= "margin-left: 200pt;">WELCOME to MAGSALITA! <br>
+      <img src="image/magsalita.png" alt="magsalita.png" >
+    </h1>
+
+    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;"><em>This website helps people with speech impediment to speak out and respond in Filipino to common questions or express what they like.</em></h4>
+    <hr class="solid">
+    <p class="indent" style="padding-bottom: 30px">
+        The user will simply click to the button and the computer will speak out for you!<br><br>
+        <button onclick="play_sound('sound/kumusta.m4a')" type="button" class="btn btn-primary"><img src="image/kumusta ka.png" alt="kumusta ka.png" width="90"><h5><font size="+3">Kumusta ka?</font><br><font size="+0">(How are you?)</font></h5></button><br><br>
+
+        If you are curious in the Filipino language, this website can also be your starting point.<br>
+        Feel free to explore all the questions and responses that are ready to help you anytime!
+    </p>
+  </body>
+</html>

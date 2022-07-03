@@ -1,0 +1,85 @@
+<!-- Requesting -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Magsalita | Home</title>
+    <script>
+    // Play a sound when a user clicks the button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Magsalita (Speak Up!)</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <a class="navbar-brand" href="greeting.html">Greetings</a>
+          <a class="navbar-brand" href="requesting.html">Make a Request</a>
+          <a class="navbar-brand" href="affirming&rejecting.html">Affirm or Reject</a>
+
+          <img src="image/magsalita.png" alt="magsalita.png" width="60">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greeting.html">Greetings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requesting.html">Make a Request</a>
+          <li class="nav-item">
+            <a class="nav-link" href="affirming&rejecting.html">Affirm or Reject</a>
+          </li>
+        </ul>
+        <img src="image/magsalita.png" alt="magsalita.png" width="60">
+      </div>
+    </nav>
+
+
+
+
+    <h1 style= "margin-left: 200pt;">Make a Request!</h1>
+    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;"><em>Click the button to speak up!</em></h4>
+    <hr class="solid">
+    <p class="indent" style="padding-bottom: 30px">
+
+      <div class="indent">
+        <div class="column">
+          <button onclick="play_sound('sound/gusto ko ng.m4a')" type="button" class="btn btn-primary"><img src="image/gusto ko ng.png" alt="gusto ko ng.png" width="90"><h5><font size="+3">Gusto ko ng...</font><br><font size="+0">(I want...)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/pagkain.m4a')" type="button" class="btn btn-success"><img src="image/pagkain.png" alt="pagkain.png" width="90"><h5><font size="+3">pagkain</font><br><font size="+0">(food)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/inumin.m4a')" type="button" class="btn btn-success"><img src="image/inumin.png" alt="inumin.png" width="90"><h5><font size="+3">inumin</font><br><font size="+0">(drinks)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/damit.m4a')" type="button" class="btn btn-success"><img src="image/damit.png" alt="damit.png" width="90"><h5><font size="+3">damit</font><br><font size="+0">(clothes)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/pera.m4a')" type="button" class="btn btn-success"><img src="image/pera.png" alt="pera.png" width="90"><h5><font size="+3">pera</font><br><font size="+0">(money)</font></h5></button><br><br>
+        </div>
+        <div class="column">
+          <button onclick="play_sound('sound/gusto kong.m4a')" type="button" class="btn btn-primary"><img src="image/gusto kong.png" alt="gusto kong.png" width="90"><h5><font size="+3">Gusto kong...</font><br><font size="+0">(I would like to...)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/kumain.m4a')" type="button" class="btn btn-success"><img src="image/kumain.png" alt="kumain.png" width="90"><h5><font size="+3">kumain</font><br><font size="+0">(eat)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/maglakad.m4a')" type="button" class="btn btn-success"><img src="image/maglakad.png" alt="maglakad.png" width="90"><h5><font size="+3">maglakad</font><br><font size="+0">(walk)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/matulog.m4a')" type="button" class="btn btn-success"><img src="image/matulog.png" alt="matulog.png" width="90"><h5><font size="+3">matulog</font><br><font size="+0">(sleep)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/manood.m4a')" type="button" class="btn btn-success"><img src="image/manood.png" alt="manood.png" width="90"><h5><font size="+3">manood</font><br><font size="+0">(watch)</font></h5></button><br><br>
+        </div>
+        <div class="column">
+          <button onclick="play_sound('sound/pumunta sa.m4a')" type="button" class="btn btn-warning"><img src="image/pumunta sa.png" alt="pumunta sa.png" width="90"><h5><font size="+3">...pumunta sa...</font><br><font size="+0">(...go to the...)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/bahay.m4a')" type="button" class="btn btn-success"><img src="image/bahay.png" alt="bahay.png" width="90"><h5><font size="+3">bahay</font><br><font size="+0">(house)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/banyo.m4a')" type="button" class="btn btn-success"><img src="image/banyo.png" alt="banyo.png" width="90"><h5><font size="+3">banyo</font><br><font size="+0">(restroom)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/ospital.m4a')" type="button" class="btn btn-success"><img src="image/ospital.png" alt="ospital.png" width="90"><h5><font size="+3">ospital</font><br><font size="+0">(hospital)</font></h5></button><br><br>
+          <button onclick="play_sound('sound/paaralan.m4a')" type="button" class="btn btn-success"><img src="image/paaralan.png" alt="paaralan.png" width="90"><h5><font size="+3">paaralan</font><br><font size="+0">(school)</font></h5></button><br><br>
+
+        </div>
+      </div>
+
+
+
+    </p>
+  </body>
+</html>
